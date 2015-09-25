@@ -15,5 +15,17 @@ class MoneyTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(-1, $b->getAmount());
     }
 
+    public function testAdd()
+    {
+        // Arrange
+        $a = new Money(600);
+
+        // Act
+        $a->add(66);
+
+        // Assert
+        $this->assertEquals(666, $a->getAmount());
+    }
+
     // ...
 }

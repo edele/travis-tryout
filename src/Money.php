@@ -13,6 +13,11 @@ class Money
         return $this->amount;
     }
 
+    public function add($val)
+    {
+        $this->amount += $val;
+    }
+
     public function negate()
     {
         return new Money(-1 * $this->amount);
