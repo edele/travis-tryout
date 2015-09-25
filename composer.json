@@ -1,0 +1,10 @@
+{
+    "name": "edele/travis-test",
+    "authors": [
+        {
+            "name": "Edele Gizatullin",
+            "email": "igrnd0@gmail.com"
+        }
+    ],
+    "require": {}
+}

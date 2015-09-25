@@ -1,0 +1,14 @@
+language: php
+php:
+- 5.4
+- 5.5
+- 5.6
+- hhvm
+- nightly
+deploy:
+  provider: heroku
+  api_key: ${HEROKU_API_KEY}
+  app: trvstst
+  on:
+    repo: edele/travis-test
+script: phpunit --bootstrap src/Money.php tests/MoneyTest
