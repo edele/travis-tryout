@@ -7,8 +7,9 @@ php:
 - nightly
 deploy:
   provider: heroku
-  api_key: ${HEROKU_API_KEY}
+  api_key:
+    secure: WUK6Y4/xVJeCU5SG+pFcXoxt1U4grwcLOSnyZhkVTwPOqtCUBZR8kzthQEhhhwOj89p2ng0w1cZjTO7oOydaeIhFk/tLeEQuGHwP11+KiiQ7iKuuLs79qil5oX+LRG6vP3rgMOjjO9s9uofgjBVUYcfB9FZNSI97emBxVsv+U6j1fgHCLy9K1jPQOLBinrSaD9H7ZKFgdeaVD5ONkCCdU7xOYuSYShcQw+m6f2SYEU5KLZ3MDo8048YoFRYv9O8zuhTmFA0fVJXW2R1Bkkouuz9IFvBj5LKseR9bpAk3PpEyt2Nf7iK1Kf82oJoRP3lwoifqlejktpgNkJAZj8s9Iax45cgeIs2yU7p/YulZSENRic87mr8t0Kfwa46EfCiE5LMyWWqKEIrOf5OFNUI1PnoNXwNgU8UzSnBoPwumOv7YQ6eYkY6+CusxM2tIRi2NKyUYIz88Agkf1PgXftcrM+EZ/exvMoCsvsst+LztsL7gB0oW8vONmpOJu5Xagwuh2PadwWvP7D1AxSVfzu2VXKIBkbRMsIwc1zwf96oedDozaQUiEO7mHsoxEeknSNcCrMHJAW6yo8WRod9aiTt1U7+LZlaMeGi/Y/RseunDzqoytXwCvj9gEUYas1OId8tZP79k3pm5Ne8RYNLTBgL5I+Fwl2nRbTgO+arvEiqcpdM=
   app: trvstst
   on:
-    repo: edele/travis-test
+    repo: edele/travis-tryout
 script: phpunit --bootstrap src/Money.php tests/MoneyTest
